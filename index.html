@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(https://2.bp.blogspot.com/-zS7C5iz16z8/UfcdTVqyenI/AAAAAAAA_q4/tP9lfg7DRKY/s1600/One+piece+Wallpaper+-+fondowallpaper.blogspot.com+-+anime+32.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+       
+        .main{
+            width: 100%;
+            height: 70px;
+            background-color: red;
+        }
+
+        .main h1{
+            color: white;
+            position: absolute;
+            margin-top: 15px;
+            left: 20px;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            margin: auto;
+        }
+
+        .nav_ul{
+            position: relative;
+        }
+
+        .nav_ul li{
+            list-style: none;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        .nav_ul a{
+            color: black;
+            text-decoration: none;
+            transition: .5s;
+        }
+
+        .nav_ul a:hover{
+            border-bottom: 5px solid yellow;
+            text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px 2px 2px rgba(0,206,1,0);#FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+        }
+
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto auto auto;
+            padding: 30px;
+            gap: 15px;
+        }
+
+        .card{
+            height: 500px;
+            width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 0 auto; 
+            text-align: center;
+        }
+
+        .card img{
+            overflow-y: hidden;
+            width: 100%;
+            height: 250px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .card h2{
+            padding: 10px;
+        }
+
+        .card p{
+            text-align: center;
+            padding: 5px;
+        }
+
+        .card a{
+            text-decoration: none;
+            margin-top: 100px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card1 {
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+    <header class="main">
+        <h1>One Piece</h1>
+        <nav class="nav">
+           <ul class="nav_ul">
+            <li><a href="#">Tripulantes</a>
+            <li><a href="#">Arcos</a></li>
+            <li><a href="#">Islas</a></li>
+            <li><a href="#">Peliculas</a></li>
+           </ul>  
+        </nav>
+        <section class="container">
+            <div class="card card1">
+                <img src="https://larepublica.pe/resizer/Sn-U6Zqe2nA2zaSod2-aQjFxTJM=/1250x735/top/smart/arc-anglerfish-arc2-prod-gruporepublica.s3.amazonaws.com/public/BBV5KU7EZVENJC3DJYMFSDSFPE.jpg" alt="">
+                <h2>Monkey D. Luffy</h2>
+                <p>"La diferencia entre tu y yo es que siempre puedo confiar en mis amigos porque nunca me abandonarán"</p>
+                <p>Recompensa 3.000.000.000.</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card2">
+                <img src="https://tse2.explicit.bing.net/th?id=OIP.hOY8CLKS-G4a95EXDmwxIQHaHa&pid=Api&P=0" alt="">
+                <h2>Roronoa Zoro</h2>
+                <p>Recompensa 1.111.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card3">
+                <img src="https://wallpapercave.com/wp/wp6184466.jpg" alt="">
+                <h2>Nami</h2>
+                <p>"Somos la tripulación más fuerte que jamás hayas visto, porque a pesar de todo nadie puede separarnos"</p>
+                <p>Recompensa 366.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card4">
+                <img src="https://tse2.explicit.bing.net/th?id=OIP.6y3v1HUSpeX_bclpFfkiQAHaD4&pid=Api&P=0" alt="">
+                <h2>Usopp</h2>
+                <p>Recompensa 500.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card5">
+                <img src="https://i.pinimg.com/736x/b9/54/a9/b954a9631cf9231bed94569e8d244dc2.jpg" alt="">
+                <h2>Sanji</h2>
+                <p>Recompensa 1.032.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card6">
+                <img src="https://i.pinimg.com/736x/01/cb/93/01cb93670fc2a11d340925578111f507.jpg" alt="">
+                <h2>Tony Tony Chopper</h2>
+                <p>Recompensa 1.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card7">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.SDai5ZBNPHzUH_7HARokBgHaEK&pid=Api&P=0" alt="">
+                <h2>Nico Robin</h2>
+                <p>"¡Quiero vivir! Llevenme al mar de vuelta con ustedes"</p>
+                <p>Recompensa 930.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card8">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.z2KdQqjebaW_SDwb7mxTlgHaD5&pid=Api&P=0" alt="">
+                <h2>Franky</h2>
+                <p>Recompensa 394.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card9">
+                <img src="https://64.media.tumblr.com/2d728aeab3721f2062305987b0dafadb/183c93da95128433-ea/s1280x1920/a7f2b078c3f5127aa9f1f131f9f65d766f947f64.jpg" alt="">
+                <h2>Brook</h2>
+                <p>Recompensa 383.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+            <div class="card card10">
+                <img src="https://columnacero.com/img/50186/one-piece-capitulo-976-spoilers.jpg" alt="">
+                <h2>Jinbei</h2>
+                <p>Recompensa 1.100.000.000</p>
+                <a href="#">Ver mas!</a>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
